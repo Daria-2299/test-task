@@ -1,0 +1,417 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "Manrope", sans-serif;
+  --text-color: #252c32;
+  --bg-color: #ffffff;
+  --light-accent-color: #f6fcff;
+  --accent-color-primary: #0e73f6;
+  --accent-color-secondary: #4094f7;
+  --placeholder-color: #9aa6ac;
+  --dark-color: #303940;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  background: var(--bg-color);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+  width: 438px;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navbar__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 84px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--accent-color-secondary);
+}
+
+.back-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 174px;
+}
+
+.back-block__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  background-color: inherit;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: var(--accent-color-primary);
+  border-bottom: 1.55px dashed rgba(14, 115, 246, 0.2);
+}
+
+.back-block__button:hover {
+  cursor: pointer;
+}
+
+.trip {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 16px 6px 16px;
+  height: 56px;
+}
+
+.trip__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+}
+
+.trip__button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 8px;
+  width: 178px;
+  height: 24px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-wrap: nowrap;
+  color: #f6f8f9;
+  background: var(--accent-color-secondary);
+  border: none;
+  border-radius: 4px;
+}
+
+.parametrs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  height: 48px;
+  background: var(--light-accent-color);
+}
+
+.parametrs--left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.parametrs__date-range {
+  display: flex;
+  gap: 16px;
+}
+
+.date__input-block {
+  display: inline-flex;
+  padding: 4px 4px 4px 12px;
+  width: 180px;
+  height: 32px;
+  background-color: var(--bg-color);
+  border: 1px solid #dde2e4;
+  border-radius: 6px;
+}
+
+.date__label {
+  margin-right: 5px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+
+.date__input {
+  flex-grow: 1;
+  max-width: 140px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+
+.date__input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.date__input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.search {
+  display: inline-flex;
+  padding: 4px 4px 4px 12px;
+  width: 260px;
+  height: 32px;
+  border: 1px solid #dde2e4;
+  border-radius: 6px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.search__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.search__input {
+  flex-grow: 1;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+
+.search__input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.parametrs__reset-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--accent-color-secondary);
+  border: none;
+  border-bottom: 1px solid rgb(64, 148, 247, 0.2);
+  background-color: inherit;
+}
+
+.parametrs--right {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--text-color);
+}
+
+.parametrs__checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.spinner {
+  height: 2px;
+  margin: 7px 0;
+  background-color: #d7edff;
+}
+
+.spinner__part {
+  border-radius: 2px 0 0 2px;
+  width: 360px;
+  height: 2px;
+  background: var(--accent-color-secondary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 4px 0px 8px;
+  margin-right: 4px;
+  max-height: 784px;
+  overflow-y: scroll;
+  background-color: var(--light-accent-color);
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  margin-right: 8px;
+  padding: 16px 16px 16px 24px;
+  background: var(--bg-color);
+  border-radius: 6px;
+}
+
+.card__part {
+  display: flex;
+  gap: 28px;
+}
+
+.card:hover {
+  border: 1px solid #9bcffd;
+}
+
+.card:hover .card__info--accent {
+  border-bottom: none;
+}
+
+.card__column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.card__column--number {
+  width: 68px;
+}
+
+.card__column--date {
+  width: 176px;
+}
+
+.card__column--price-plan {
+  text-align: right;
+  width: 114px;
+}
+
+.card__column--price-actual {
+  text-align: right;
+  width: 86px;
+}
+
+.card__column--city {
+  width: 639px;
+}
+
+.card__column--document {
+  align-items: center;
+  width: 96px;
+}
+
+.card__title {
+  font-size: 12px;
+  line-height: 133%;
+  color: #84919a;
+}
+
+.card__info {
+  max-width: 568px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__info--accent {
+  align-self: start;
+  color: var(--accent-color-primary);
+  border-bottom: 1px solid var(--accent-color-secondary);
+}
+
+.card__column--price-actual > .card__info,
+.card__column--price-plan > .card__info {
+  color: rgba(25, 28, 48, 0.9);
+}
+
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 84px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #5b6871;
+  border: none;
+  background: #eef0f2;
+  border-radius: 10px;
+}
+
+.card__info-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 582px;
+}
+
+.tooltip-icon {
+  cursor: url('data:image/svg+xml;utf8,<svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.2856 14.309C6.0016 13.95 5.6566 13.216 5.0426 12.325C4.6946 11.821 3.8316 10.872 3.5746 10.39C3.3516 9.96403 3.3756 9.77303 3.4286 9.42003C3.5226 8.79203 4.1666 8.30303 4.8536 8.36903C5.3726 8.41803 5.8126 8.76103 6.2086 9.08503C6.4476 9.28003 6.7416 9.65903 6.9186 9.87303C7.0816 10.069 7.1216 10.15 7.2956 10.382C7.5256 10.689 7.5976 10.841 7.5096 10.503C7.4386 10.007 7.3226 9.16003 7.1546 8.41103C7.0266 7.84303 6.9956 7.75403 6.8736 7.31803C6.7446 6.85403 6.6786 6.52903 6.5576 6.03703C6.4736 5.68903 6.3226 4.97803 6.2816 4.57803C6.2246 4.03103 6.1946 3.13903 6.5456 2.72903C6.8206 2.40803 7.4516 2.31103 7.8426 2.50903C8.3546 2.76803 8.6456 3.51203 8.7786 3.80903C9.0176 4.34303 9.1656 4.96003 9.2946 5.77003C9.4586 6.80103 9.7606 8.23203 9.7706 8.53303C9.7946 8.16403 9.7026 7.38703 9.7666 7.03303C9.8246 6.71203 10.0946 6.33903 10.4326 6.23803C10.7186 6.15303 11.0536 6.12203 11.3486 6.18303C11.6616 6.24703 11.9916 6.47103 12.1146 6.68203C12.4766 7.30603 12.4836 8.58103 12.4986 8.51303C12.5846 8.13703 12.5696 7.28403 12.7826 6.92903C12.9226 6.69503 13.2796 6.48403 13.4696 6.45003C13.7636 6.39803 14.1246 6.38203 14.4336 6.44203C14.6826 6.49103 15.0196 6.78703 15.1106 6.92903C15.3286 7.27303 15.4526 8.24603 15.4896 8.58703C15.5046 8.72803 15.5636 8.19503 15.7826 7.85103C16.1886 7.21203 17.6256 7.08803 17.6806 8.49003C17.7056 9.14403 17.7006 9.11403 17.7006 9.55403C17.7006 10.071 17.6886 10.382 17.6606 10.756C17.6296 11.156 17.5436 12.06 17.4186 12.498C17.3326 12.799 17.0476 13.476 16.7666 13.882C16.7666 13.882 15.6926 15.132 15.5756 15.695C15.4576 16.257 15.4966 16.261 15.4736 16.66C15.4506 17.058 15.5946 17.582 15.5946 17.582C15.5946 17.582 14.7926 17.686 14.3606 17.617C13.9696 17.554 13.4856 16.776 13.3606 16.538C13.1886 16.21 12.8216 16.273 12.6786 16.515C12.4536 16.898 11.9696 17.585 11.6276 17.628C10.9596 17.712 9.5736 17.659 8.4886 17.648C8.4886 17.648 8.6736 16.637 8.2616 16.29C7.9566 16.031 7.4316 15.506 7.1176 15.23L6.2856 14.309Z" fill="white" /><path fill-rule="evenodd" clip-rule="evenodd" d="M6.2856 14.309C6.0016 13.95 5.6566 13.216 5.0426 12.325C4.6946 11.821 3.8316 10.872 3.5746 10.39C3.3516 9.96403 3.3756 9.77303 3.4286 9.42003C3.5226 8.79203 4.1666 8.30303 4.8536 8.36903C5.3726 8.41803 5.8126 8.76103 6.2086 9.08503C6.4476 9.28003 6.7416 9.65903 6.9186 9.87303C7.0816 10.069 7.1216 10.15 7.2956 10.382C7.5256 10.689 7.5976 10.841 7.5096 10.503C7.4386 10.007 7.3226 9.16003 7.1546 8.41103C7.0266 7.84303 6.9956 7.75403 6.8736 7.31803C6.7446 6.85403 6.6786 6.52903 6.5576 6.03703C6.4736 5.68903 6.3226 4.97803 6.2816 4.57803C6.2246 4.03103 6.1946 3.13903 6.5456 2.72903C6.8206 2.40803 7.4516 2.31103 7.8426 2.50903C8.3546 2.76803 8.6456 3.51203 8.7786 3.80903C9.0176 4.34303 9.1656 4.96003 9.2946 5.77003C9.4586 6.80103 9.7606 8.23203 9.7706 8.53303C9.7946 8.16403 9.7026 7.38703 9.7666 7.03303C9.8246 6.71203 10.0946 6.33903 10.4326 6.23803C10.7186 6.15303 11.0536 6.12203 11.3486 6.18303C11.6616 6.24703 11.9916 6.47103 12.1146 6.68203C12.4766 7.30603 12.4836 8.58103 12.4986 8.51303C12.5846 8.13703 12.5696 7.28403 12.7826 6.92903C12.9226 6.69503 13.2796 6.48403 13.4696 6.45003C13.7636 6.39803 14.1246 6.38203 14.4336 6.44203C14.6826 6.49103 15.0196 6.78703 15.1106 6.92903C15.3286 7.27303 15.4526 8.24603 15.4896 8.58703C15.5046 8.72803 15.5636 8.19503 15.7826 7.85103C16.1886 7.21203 17.6256 7.08803 17.6806 8.49003C17.7056 9.14403 17.7006 9.11403 17.7006 9.55403C17.7006 10.071 17.6886 10.382 17.6606 10.756C17.6296 11.156 17.5436 12.06 17.4186 12.498C17.3326 12.799 17.0476 13.476 16.7666 13.882C16.7666 13.882 15.6926 15.132 15.5756 15.695C15.4576 16.257 15.4966 16.261 15.4736 16.66C15.4506 17.058 15.5946 17.582 15.5946 17.582C15.5946 17.582 14.7926 17.686 14.3606 17.617C13.9696 17.554 13.4856 16.776 13.3606 16.538C13.1886 16.21 12.8216 16.273 12.6786 16.515C12.4536 16.898 11.9696 17.585 11.6276 17.628C10.9596 17.712 9.5736 17.659 8.4886 17.648C8.4886 17.648 8.6736 16.637 8.2616 16.29C7.9566 16.031 7.4316 15.506 7.1176 15.23L6.2856 14.309Z" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" /><path d="M14.5205 14.6624V11.2034" stroke="black" stroke-width="0.75" stroke-linecap="round" /><path d="M12.5049 14.6764L12.4889 11.2034" stroke="black" stroke-width="0.75" stroke-linecap="round" /><path d="M10.5088 11.2338L10.5298 14.6598" stroke="black" stroke-width="0.75" stroke-linecap="round" /></svg>'),
+    auto;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -68px;
+  right: -203px;
+  padding: 4px 8px;
+  width: 219px;
+  height: 56px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #f6f8f9;
+  border-radius: 4px;
+  background: var(--dark-color);
+  z-index: 10;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  margin-left: 7px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid var(--dark-color);
+}
+
+.tooltip-icon:hover + .tooltip {
+  display: block;
+}
