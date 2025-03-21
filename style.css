@@ -278,6 +278,7 @@
   margin-right: 8px;
   padding: 16px 16px 16px 24px;
   background: var(--bg-color);
+  border: 1px solid transparent;
   border-radius: 6px;
 }
 
@@ -287,7 +288,7 @@
 }
 
 .card:hover {
-  border: 1px solid #9bcffd;
+  border-color: #9bcffd;
 }
 
 .card:hover .card__info--accent {
